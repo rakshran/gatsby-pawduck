@@ -46,11 +46,11 @@ const links = [
 
 ]
 
-/*const samplePageLinks = [
+const samplePageLinks = [
   {
     text: "Page 2",
     url: "page-2",
-    badge: false,
+    badge: true,
     description:
       "A simple example of linking to another page within a Gatsby site",
   },
@@ -58,7 +58,7 @@ const links = [
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
-*/
+
 
 const moreLinks = [
   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
@@ -99,8 +99,8 @@ const IndexPage = () => (
         Welcome to <b>pawduck!</b>
       </h1>
         <p className={styles.intro}>Curation of best content on the internet for builders. </p>
-      /*<p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+      <p className={styles.intro}>
+        <b>For buiders of tech products.</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -109,7 +109,7 @@ const IndexPage = () => (
         ))}
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
-      </p> */
+      </p>
     </div>
     <ul className={styles.list}>
       {links.map(link => (
