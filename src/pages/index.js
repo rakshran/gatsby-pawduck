@@ -98,6 +98,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
+        <p className={styles.intro}>Curation of best content on the internet for builders. </p>
       /*<p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
