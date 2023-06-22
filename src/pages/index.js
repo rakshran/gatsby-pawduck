@@ -98,16 +98,17 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
+        <h3>
+        Curation of best content on the internet for builders of tech products.
+        </h3>
       <p className={styles.intro}>
-        <b>For buiders of tech products.</b>{" "}
+        <b>Get started here</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>
