@@ -46,7 +46,7 @@ const links = [
 
 ]
 
-const samplePageLinks = [
+/*const samplePageLinks = [
   {
     text: "Page 2",
     url: "page-2",
@@ -58,6 +58,7 @@ const samplePageLinks = [
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
+*/
 
 const moreLinks = [
   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
