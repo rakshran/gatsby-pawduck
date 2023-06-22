@@ -98,7 +98,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
-      <p className={styles.intro}>
+      /*<p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -108,7 +108,7 @@ const IndexPage = () => (
         ))}
         <br />
         Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+      </p> */
     </div>
     <ul className={styles.list}>
       {links.map(link => (
