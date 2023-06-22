@@ -37,6 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
+  background-color: #fffa51;
   font-family: sans-serif;
   font-family: var(--font-sans);
   font-weight: normal;
