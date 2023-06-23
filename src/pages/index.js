@@ -99,7 +99,7 @@ const IndexPage = () => (
         Welcome to <b>pawduck!</b>
       </h1>
         <p text-align = 'center'>
-        The curation of best content on the internet for builders of tech products.
+        <b>The curation of best content on the internet for builders of tech products.</b>
         </p>
       {/* <p className={styles.intro}>
         <b>Get started here</b>{" "}
