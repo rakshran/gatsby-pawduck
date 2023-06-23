@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
     </Link>
     <img
       alt="pawduck logo"
-      height={20}
+      height={40}
       style={{ margin: 0 }}
       src={logo} /> 
   

@@ -86,7 +86,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      <StaticImage
+     {/* <StaticImage
         src="../images/pawduck_logo.png"
         loading="eager"
         width={64}
@@ -94,7 +94,7 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
-      />
+      /> */}
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
