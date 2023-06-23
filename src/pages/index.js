@@ -9,39 +9,39 @@ import * as styles from "../components/index.module.css"
 const links = [
   {
     text: "Tech",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    url: "tech",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "Fundamentals of Computer Science and working of technology.",
   },
   {
     text: "Business",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    url: "business",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Structured frameworks to approach business decision making.",
   },
   {
     text: "Design",
-    url: "https://www.gatsbyjs.com/plugins",
+    url: "design",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
+      "Concepts and ideas to develop intuitive design sense.",
   },
   {
     text: "Productivity",
-    url: "https://www.gatsbyjs.com/cloud",
+    url: "productivity",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "Tips to organize and become more efficient at work.",
   },
   {
     text: "Careers",
-    url: "https://www.gatsbyjs.com/cloud",
+    url: "careers",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "Advice on thinking about and navigating careers in tech.",
   },
   {
     text: "Resources",
-    url: "https://www.gatsbyjs.com/cloud",
+    url: "resources",
     description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
+      "Essential tools to level-up your game.",
   }
 
 ]
@@ -98,10 +98,10 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
-        <h3>
-        Curation of best content on the internet for builders of tech products.
-        </h3>
-      <p className={styles.intro}>
+        <p>
+        The curation of best content on the internet for builders of tech products.
+        </p>
+      {/* <p className={styles.intro}>
         <b>Get started here</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
@@ -109,7 +109,7 @@ const IndexPage = () => (
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-      </p>
+      </p> */}
     </div>
     <ul className={styles.list}>
       {links.map(link => (
