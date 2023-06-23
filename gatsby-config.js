@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `$/src`,
+        path: `$/Users/rakshran/Documents/Side projects/GitHub/gatsby-starter/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
