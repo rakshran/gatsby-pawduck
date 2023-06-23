@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `$/src/images/pawduck_logo.png`,
+        path: `$/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
