@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from '../images/pawduck_logo.png'
+import logo from '/pawduck_logo.png'
 
 const Header = ({ siteTitle }) => (
   <header
