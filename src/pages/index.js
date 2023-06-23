@@ -98,7 +98,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>pawduck!</b>
       </h1>
-        <p>
+        <p text-align = 'center'>
         The curation of best content on the internet for builders of tech products.
         </p>
       {/* <p className={styles.intro}>
