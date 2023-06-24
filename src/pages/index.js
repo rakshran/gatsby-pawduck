@@ -9,7 +9,7 @@ import * as styles from "../components/index.module.css"
 const links = [
   {
     text: "Tech",
-    url: "tech",
+    url: "src/pages/tech.js",
     description:
       "Fundamentals of Computer Science and working of technology.",
   },
