@@ -6,7 +6,10 @@ import Seo from "../components/seo"
 
 export const Head = () => <Seo title="tech" />
 
-export const query = graphql`
+
+import { graphql } from 'gatsby';
+
+const query = graphql`
   query {
     allSanityTechArticle {
       nodes {
