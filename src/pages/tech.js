@@ -17,7 +17,7 @@ const TechPage = ({ data }) => {
   
     return (
       <div>
-        <h1>Tech Articles</h1>
+        <h1>Tech</h1>
         <ul>
           {articles.map((article) => (
             <li key={article.title}>
