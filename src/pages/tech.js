@@ -20,10 +20,11 @@ const query = graphql`
   }
 `;
 
-const articles = data.allSanityTechArticle.nodes;
 
-const TechPage = ({data}) => (
-    
+const TechPage = ({data}) => {
+    const articles = data.allSanityTechArticle.nodes;
+
+  return(  
   <Layout>
     <h1>Tech</h1>
     <p>Fundamentals of Computer Science.</p>
@@ -37,6 +38,7 @@ const TechPage = ({data}) => (
 
     <Link to="/">Go back to the homepage</Link>
   </Layout>
-)
+  )
+          }
   
   export default TechPage;
