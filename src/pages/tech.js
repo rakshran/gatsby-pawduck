@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const TechPage = ({ data }) => {
-  const articles = data.allSanityTechArticle;
+  const articles = data.allSanityTechArticle.title;
   console.log("articles", articles);
 
   return (
