@@ -1,12 +1,10 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
-
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const TechPage = ({ data }) => {
   const articles = data.allSanityTechArticle.nodes;
-  console.log("articles", articles);
 
   return (
     <Layout>
@@ -15,12 +13,11 @@ const TechPage = ({ data }) => {
       <p>Fundamentals of Computer Science.</p>
       <ul>
         {articles.map((article) => (
-          <li key={article.title}>
+          <li key={article._id}>
             <a href={article.url}>{article.title}</a>
           </li>
         ))}
       </ul>
-      <Link to="/">Go back to the homepage</Link>
     </Layout>
   );
 };
@@ -28,13 +25,13 @@ const TechPage = ({ data }) => {
 export const query = graphql`
   query {
     allSanityTechArticle {
-        nodes {
-          id
-          title
-          url
-        }
+      nodes {
+        _id
+        title
+        url
       }
     }
+  }
 `;
 
 export default TechPage;
