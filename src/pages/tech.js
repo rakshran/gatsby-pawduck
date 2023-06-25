@@ -27,11 +27,9 @@ const TechPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allSanityTechArticle {
-      nodes {
+    allTechArticle {
         title
         url
-      }
     }
   }
 `;
