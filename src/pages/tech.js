@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const TechPage = ({ data }) => {
-  const articles = data.allSanityTechArticle.nodes;
+  const articles = data.allSanityTechArticle;
   console.log("articles", articles);
 
   return (
@@ -28,10 +28,8 @@ const TechPage = ({ data }) => {
 export const query = graphql`
   query {
     allSanityTechArticle {
-      nodes{
         title
         url
-      }
     }
   }
 `;
