@@ -28,14 +28,12 @@ const TechPage = ({ data }) => {
 export const query = graphql`
   query {
     allSanityTechArticle {
-      techArticle {
         nodes{
           title
           url
         }
       }
     }
-  }
 `;
 
 export default TechPage;
