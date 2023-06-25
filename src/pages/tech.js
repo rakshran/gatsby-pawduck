@@ -4,8 +4,9 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-const TechPage = ({ query }) => {
-  const articles = query.allSanityTechArticle.nodes;
+const TechPage = ({ data }) => {
+  const articles = data.allSanityTechArticle.nodes;
+  console.log("articles", articles);
 
   return (
     <Layout>
