@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 
 const TechPage = ({ data }) => {
-  //const articles = data.sanityTechArticle.nodes;
+  const articles = data.allSanityTechArticle.edges;
 
   return (
     <Layout>
@@ -14,9 +14,9 @@ const TechPage = ({ data }) => {
       <h1>Tech</h1>
       <p>Fundamentals of Computer Science.</p>
       <ul>
-        {articles.map((data) => (
-          <li key={data.sanityTechaArticle.title}>
-            <a href={data.sanityTechaArticle.url}>{ata.sanityTechaArticle.title}</a>
+        {articles.map((edge) => (
+          <li key={edge.node.title}>
+            <a href={edge.node.url}>{edge.node.title}</a>
           </li>
         ))}
       </ul>
@@ -25,14 +25,17 @@ const TechPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query($_id: String!) {
-    sanityTechArticle(id: {eq: $_id}) {
+  query {
+    allSanityTechArticle {
+      edges {
+        node {
         _id
         title
         url
       }
     }
   }
+}
 `;
 
 export default TechPage;
