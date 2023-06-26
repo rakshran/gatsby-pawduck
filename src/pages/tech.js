@@ -1,17 +1,12 @@
 import React from "react";
-import { useSanity } from "sanity";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 
-const TechPage = () => {
-  const { data } = useSanity();
-  const links = data.collections.techArticle.filter((link) => link.title);
-  console.log("hello", links)
 
-// const TechPage = ({ data }) => {
-//   const articles = data.allSanityTechArticle.nodes;
+const TechPage = ({ data }) => {
+  //const articles = data.sanityTechArticle.nodes;
 
   return (
     <Layout>
@@ -19,9 +14,9 @@ const TechPage = () => {
       <h1>Tech</h1>
       <p>Fundamentals of Computer Science.</p>
       <ul>
-        {articles.map((article) => (
-          <li key={article._id}>
-            <a href={article.url}>{article.title}</a>
+        {articles.map((data) => (
+          <li key={data.sanityTechaArticle.title}>
+            <a href={data.sanityTechaArticle.url}>{ata.sanityTechaArticle.title}</a>
           </li>
         ))}
       </ul>
@@ -30,9 +25,8 @@ const TechPage = () => {
 };
 
 export const query = graphql`
-  query {
-    allSanityTechArticle {
-      nodes {
+  query($_id: String!) {
+    sanityTechArticle(id: {eq: $_id}) {
         _id
         title
         url
