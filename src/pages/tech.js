@@ -1,10 +1,17 @@
 import React from "react";
+import { useSanity } from "sanity";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-const TechPage = ({ data }) => {
-  const articles = data.allSanityTechArticle.nodes;
+
+const TechPage = () => {
+  const { data } = useSanity();
+  const links = data.collections.techArticle.filter((link) => link.title);
+  console.log("hello", links)
+
+// const TechPage = ({ data }) => {
+//   const articles = data.allSanityTechArticle.nodes;
 
   return (
     <Layout>
