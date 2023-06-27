@@ -11,31 +11,31 @@ const links = [
     text: "Tech",
     url: "tech",
     description:
-      "Fundamentals of Computer Science and working of technology.",
+      "Fundamentals of how technology works.",
   },
   {
     text: "Business",
-    url: "test",
+    url: "business",
     description:
-      "Structured frameworks to approach business decision making.",
+      "Structured frameworks for business decision making.",
   },
   {
     text: "Design",
     url: "design",
     description:
-      "Concepts and ideas to develop intuitive design sense.",
+      "Concepts to develop intuitive design sense.",
   },
   {
     text: "Productivity",
     url: "productivity",
     description:
-      "Tips to organize and become more efficient at work.",
+      "Tips to become more efficient at work.",
   },
   {
     text: "Careers",
     url: "careers",
     description:
-      "Advice on thinking about and navigating careers in tech.",
+      "Advice on navigating careers in tech.",
   },
   {
     text: "Resources",
