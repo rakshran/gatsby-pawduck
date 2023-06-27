@@ -17,7 +17,7 @@ const links = [
     text: "Business",
     url: "business",
     description:
-      "Structured frameworks for business decision making.",
+      "Structured frameworks for decision making.",
   },
   {
     text: "Design",
