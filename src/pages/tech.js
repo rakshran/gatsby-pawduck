@@ -6,7 +6,7 @@ import Seo from "../components/seo";
 
 
 const TechPage = ({ data }) => {
-  const articles = data.allSanityTech.edges;
+  const articles = data.allTech.edges;
 
   return (
     <Layout>
@@ -26,7 +26,7 @@ const TechPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allSanityTech {
+    allTech {
       edges {
         node {
         _id
