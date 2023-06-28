@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 
 const TechPage = ({ data }) => {
   // Collect articles by section
-  const articlesBySection = data.allSanityTechArticle.edges.reduce((sections, edge) => {
+  const articlesBySection = data.allSanityTech.edges.reduce((sections, edge) => {
     const { section, title, url } = edge.node;
 
     if (!sections[section]) {
@@ -39,7 +39,7 @@ const TechPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allSanityTechArticle {
+    allSanityTech {
       edges {
         node {
           _id
