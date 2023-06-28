@@ -31,7 +31,7 @@ export const query = graphql`
         node {
         _id
         title
-        url
+        URL
       }
     }
   }
