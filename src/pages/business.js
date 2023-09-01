@@ -18,16 +18,16 @@ const TechPage = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="Tech" />
-      <h1>Tech</h1>
-      <p>Fundamentals of Computer Science.</p>
+      <Seo title="Business" />
+      <h1>Business</h1>
+      <p>Structured frameworks for decision making.</p>
       {Object.entries(articlesBySection).map(([section, articles]) => (
         <div key={section}>
           <h2>{section}</h2>
           <ul>
             {articles.map((article) => (
               <li key={article.title}>
-                <a href={article.url}>{article.title}</a>
+                <a href={article.URL}>{article.title}</a>
               </li>
             ))}
           </ul>
