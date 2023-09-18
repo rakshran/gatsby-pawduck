@@ -10,7 +10,7 @@ const TechPage = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="tech" />
+      <Seo title="Tech" />
       <h1>Tech</h1>
       <p>Fundamentals of Computer Science.</p>
       <ul>
