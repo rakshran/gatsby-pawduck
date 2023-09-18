@@ -27,12 +27,12 @@ const BusinessPage = ({ data }) => {
         <div key={section}>
           <h2>{section}</h2>
           <ul>
-        {articles.map((edge) => (
-          <li key={edge.node.title}>
-            <a href={edge.node.URL} target="_blank">{edge.node.title}</a>
-          </li>
-        ))}
-      </ul>
+            {articles.map((article) => (
+              <li key={article.title}>
+                <a href={article.URL} target="_blank">{article.title}</a>
+              </li>
+            ))}
+          </ul>
         </div>
       ))}
     </Layout>
