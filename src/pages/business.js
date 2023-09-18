@@ -3,7 +3,9 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 
-const TechPage = ({ data }) => {
+
+
+const BusinessPage = ({ data }) => {
   // Collect articles by section
   const articlesBySection = data.allSanityBusiness.edges.reduce((sections, edge) => {
     const { section, title, url } = edge.node;
@@ -25,12 +27,12 @@ const TechPage = ({ data }) => {
         <div key={section}>
           <h2>{section}</h2>
           <ul>
-            {articles.map((article) => (
-              <li key={article.title}>
-                <a href={article.URL}>{article.title}</a>
-              </li>
-            ))}
-          </ul>
+        {articles.map((edge) => (
+          <li key={edge.node.title}>
+            <a href={edge.node.URL} target="_blank">{edge.node.title}</a>
+          </li>
+        ))}
+      </ul>
         </div>
       ))}
     </Layout>
@@ -52,4 +54,4 @@ export const query = graphql`
   }
 `;
 
-export default TechPage;
+export default BusinessPage;
