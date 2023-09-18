@@ -8,7 +8,7 @@ import Seo from "../components/seo";
 const BusinessPage = ({ data }) => {
   // Collect articles by section
   const articlesBySection = data.allSanityBusiness.edges.reduce((sections, edge) => {
-    const { section, title, url } = edge.node;
+    const { section, title, URL } = edge.node;
 
     if (!sections[section]) {
       sections[section] = [];
