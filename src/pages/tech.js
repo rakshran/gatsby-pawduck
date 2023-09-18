@@ -41,7 +41,7 @@ const TechPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allSanityTech {(sort: { fields: title, order: ASC })
+    allSanityTech {
       edges {
         node {
           _id
