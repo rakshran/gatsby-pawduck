@@ -29,7 +29,7 @@ const BusinessPage = ({ data }) => {
           <ul>
             {articles.map((article) => (
               <li key={article.title}>
-                <a href={article.url} target="_blank">{article.title}</a>
+                <a href={article.URL} target="_blank">{article.title}</a>
               </li>
             ))}
           </ul>
