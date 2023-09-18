@@ -6,20 +6,35 @@ import Seo from "../components/seo";
 
 
 const TechPage = ({ data }) => {
-  const articles = data.allSanityTech.edges;
+  // Collect articles by section
+  const articlesBySection = data.allSanityTech.edges.reduce((sections, edge) => {
+    const { section, title, URL } = edge.node;
+
+    if (!sections[section]) {
+      sections[section] = [];
+    }
+
+    sections[section].push({ title, URL });
+    return sections;
+  }, {});
 
   return (
     <Layout>
       <Seo title="Tech" />
       <h1>Tech</h1>
       <p>Fundamentals of Computer Science.</p>
-      <ul>
-        {articles.map((edge) => (
-          <li key={edge.node.title}>
-            <a href={edge.node.URL} target="_blank">{edge.node.title}</a>
-          </li>
-        ))}
-      </ul>
+      {Object.entries(articlesBySection).map(([section, articles]) => (
+        <div key={section}>
+          <h2>{section}</h2>
+          <ul>
+            {articles.map((article) => (
+              <li key={article.title}>
+                <a href={article.URL} target="_blank">{article.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </Layout>
   );
 };
@@ -29,13 +44,14 @@ export const query = graphql`
     allSanityTech {
       edges {
         node {
-        _id
-        title
-        URL
+          _id
+          title
+          URL
+          section
+        }
       }
     }
   }
-}
 `;
 
 export default TechPage;
