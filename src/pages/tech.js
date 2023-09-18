@@ -16,7 +16,7 @@ const TechPage = ({ data }) => {
       <ul>
         {articles.map((edge) => (
           <li key={edge.node.title}>
-            <a href={edge.node.url}>{edge.node.title}</a>
+            <a href={edge.node.url} target="_blank">{edge.node.title}</a>
           </li>
         ))}
       </ul>
