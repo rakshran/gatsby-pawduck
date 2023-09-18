@@ -14,7 +14,7 @@ const BusinessPage = ({ data }) => {
       sections[section] = [];
     }
 
-    sections[section].push({ title, url });
+    sections[section].push({ title, URL });
     return sections;
   }, {});
 
