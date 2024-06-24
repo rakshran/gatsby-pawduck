@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -61,24 +60,19 @@ const samplePageLinks = [
 
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: "Rakshit's website", url: "https://rakshitranjan.com" },
   {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
+    text: "Newsletter",
+    url: "https://newsletter.rakshitranjan.com",
   },
   {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
+    text: "Email",
+    url: "mailto://rakshit@rakshitranjan.com",
   },
   {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
+    text: "Twitter",
+    url: "https://x.com/rakshran",
   },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
